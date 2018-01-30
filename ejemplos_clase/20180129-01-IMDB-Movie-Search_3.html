@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.google.com.mx" />
+<title>20180129-01-IMDB-Movie-Search_3</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">20180129-01-IMDB-Movie-Search_3</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/?p=us</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lst-ib</td>
+	<td>IMDB</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=btnK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=IMDb - Movies, TV and Celebrities - IMDb</td>
+	<td>IMDb - Movies, TV and Celebrities - IMDb</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=IMDb - Movies, TV and Celebrities - IMDb</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=navbar-query</td>
+	<td>lord of the rings</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=navbar-submit-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=El señor de los anillos: La comunidad del anillo</td>
+	<td>El señor de los anillos: La comunidad del anillo</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=El señor de los anillos: La comunidad del anillo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=2001</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>El señor de los anillos: La comunidad del anillo (2001) - IMDb</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='titleCast']/table/tbody/tr[4]/td[2]/a/span</td>
+	<td>Sean Astin</td>
+</tr>
+<tr>
+	<td>storeTable</td>
+	<td>css=table.cast_list.3.1</td>
+	<td>Actor_1</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Sam</td>
+	<td>Sam</td>
+</tr>
+<tr>
+	<td>storeTable</td>
+	<td>css=table.cast_list.3.3</td>
+	<td>Role_1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>El actor &quot;${Actor_1}&quot; desempeña el papel de &quot;${Role_1}&quot;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='titleCast']/table/tbody/tr[5]/td[2]/a/span</td>
+	<td>Sala Baker</td>
+</tr>
+<tr>
+	<td>storeTable</td>
+	<td>css=table.cast_list.4.1</td>
+	<td>Actor_2</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Sauron</td>
+	<td>Sauron</td>
+</tr>
+<tr>
+	<td>storeTable</td>
+	<td>css=table.cast_list.4.3</td>
+	<td>Role_2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>El actor &quot;${Actor_2}&quot; desempeña el papel de &quot;${Role_2}&quot;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='titleCast']/table/tbody/tr[6]/td[2]/a/span</td>
+	<td>Sean Bean</td>
+</tr>
+<tr>
+	<td>storeTable</td>
+	<td>css=table.cast_list.5.1</td>
+	<td>Actor_3</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Boromir</td>
+	<td>Boromir</td>
+</tr>
+<tr>
+	<td>storeTable</td>
+	<td>css=table.cast_list.5.3</td>
+	<td>Role_3</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>El actor &quot;${Actor_3}&quot; desempeña el papel de &quot;${Role_3}&quot;</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
