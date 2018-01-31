@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.google.com.mx/" />
+<title>20180130-01-Nippon-Yasan</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">20180130-01-Nippon-Yasan</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/?gfe_rd=cr&amp;dcr=0&amp;ei=TTFxWqiPN-jV8weHj6fICQ&amp;gws_rd=ssl</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lst-ib</td>
+	<td>nippon-yasan</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=btnK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Nippon-Yasan.Com: Japanese importation of video games, PS4 ...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=search_query</td>
+	<td>Soul of Gold</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=search_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Myth Cloth EX - Dohko...</td>
+	<td>Myth Cloth EX - Dohko...</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Myth Cloth EX - Dohko...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Myth Cloth EX - Dohko de Libra (God Cloth) - Importación de Japón</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeTitle</td>
+	<td>Myth Cloth EX - Dohko de Libra (God Cloth) - Importación de Japón</td>
+	<td>Figure_1_Name_1</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=h1.title</td>
+	<td>Figure_1_Name_2</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>id=our_price_display</td>
+	<td>Figure_1_Price</td>
+</tr>
+<tr>
+	<td>goBackAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Myth Cloth EX -...</td>
+	<td>Myth Cloth EX -...</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Myth Cloth EX -...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Myth Cloth EX - Afrodita de Piscis (God Cloth) - Importación de Japón</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=h1.title</td>
+	<td>Figure_2_Name</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>id=our_price_display</td>
+	<td>Figure_2_Price</td>
+</tr>
+<tr>
+	<td>goBackAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Myth Cloth EX - Milo de...</td>
+	<td>Myth Cloth EX - Milo de...</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Myth Cloth EX - Milo de...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Myth Cloth EX - Milo de Escorpio (God Cloth) - Importación de Japón</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=h1.title</td>
+	<td>Figure_3_Name</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>id=our_price_display</td>
+	<td>Figure_3_Price</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{storedVars['Figure_1_Name_2'].substring(16)}</td>
+	<td>Figure_1_Name_2</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{storedVars['Figure_2_Name'].substring(16)}</td>
+	<td>Figure_2_Name</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{storedVars['Figure_3_Name'].substring(16)}</td>
+	<td>Figure_3_Name</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>La figura ${Figure_1_Name_1} tiene un costo de ${Figure_1_Price}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>La figura ${Figure_1_Name_2} tiene un costo de ${Figure_1_Price}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>La figura ${Figure_2_Name} tiene un costo de ${Figure_2_Price}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>La figura ${Figure_3_Name} tiene un costo de ${Figure_3_Price}</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
